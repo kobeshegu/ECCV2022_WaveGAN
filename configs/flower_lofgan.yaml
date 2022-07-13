@@ -1,0 +1,38 @@
+# logger options
+snapshot_save_iter: 20000
+snapshot_val_iter: 2000
+snapshot_log_iter: 200
+
+# optimization options
+max_iter: 100000
+weight_decay: 0.0001
+lr_gen: 0.0001
+lr_dis: 0.0001
+init: kaiming
+w_adv_g: 1
+w_adv_d: 1
+w_recon: 0.5
+w_cls: 1.0
+w_gp: 10
+
+# model options
+model: LoFGAN
+gen:
+  nf: 32
+  n_downs: 2
+  norm: bn
+  rate: 0.5
+dis:
+  nf: 64
+  n_res_blks: 4
+  num_classes: 85
+
+# data options
+dataset: flower
+num_workers: 8
+batch_size: 8
+n_sample_train: 3
+n_sample_val: 3
+n_sample_test: 3
+num_generate: 10
+data_root: datasets/flower_c8189_s128_data_rgb.npy
