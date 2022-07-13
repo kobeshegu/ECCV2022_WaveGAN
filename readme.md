@@ -89,6 +89,9 @@ class WavePool(nn.Module):
             raise NotImplementedError
       
 ```
+## Notice
+The code of lofgan_baseindex.py covers both WaveGAN-B and WaveGAN-M version of our method.
+lofgan.py only contains the WaveGAN-M version. 
 
 ##  Training:
 
@@ -106,3 +109,30 @@ The generated images are stored in ./results/fakes
 
 To quantitative evaluate the generated images,  pytorch-fid is required to be installed by `pip install pytorch-fid`.
 
+If you use our WaveGAN-B version to train the model, remember to comment bellow codes in the `lofgan_baseindex.py' :
+```
+        LH1, HL1, HH1 = LH1.view(8, 3,c, h, w), HL1.view(8, 3,c, h, w), HH1.view(8, 3,c, h, w)
+        LH1, HL1, HH1 = LH1[:,base_index,:,:,:], HL1[:,base_index,:,:,:], HH1[:,base_index,:,:,:]
+
+        LH2, HL2, HH2 = LH2.view(8, 3, c, h, w), HL2.view(8, 3, c, h, w), HH2.view(8, 3, c, h, w)
+        LH2, HL2, HH2 = LH2[:, base_index, :, :, :], HL2[:, base_index, :, :, :], HH2[:, base_index, :, :, :]
+
+        LH3, HL3, HH3 = LH3.view(8, 3, c, h, w), HL3.view(8, 3, c, h, w), HH3.view(8, 3, c, h, w)
+        LH3, HL3, HH3 = LH3[:, base_index, :, :, :], HL3[:, base_index, :, :, :], HH3[:, base_index, :, :, :]
+
+        LH4, HL4, HH4 = LH4.view(8, 3, c, h, w), HL4.view(8, 3, c, h, w), HH4.view(8, 3, c, h, w)
+        LH4, HL4, HH4 = LH4[:, base_index, :, :, :], HL4[:, base_index, :, :, :], HH4[:, base_index, :, :, :]
+```
+
+Feel free to contact kobeshegu@gmail.com if you have any question!
+Our code is heavily based on LoFGAN, we thanks their great work!
+
+
+## Citation:
+
+@inproceedings{Yang2022WaveGAN,
+  title     = {WaveGAN: An Frequency-aware GAN for High-Fidelity Few-shot Image Generation},
+  author    = {Mengping Yang, and Zhe Wang, and Ziqiu Chi, and Wenyi Feng},
+  booktitle = {ECCV},
+  year      = {2022}
+}
