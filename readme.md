@@ -129,10 +129,11 @@ Our code is heavily based on LoFGAN, we thanks their great work!
 
 
 ## Citation:
-
+```
 @inproceedings{Yang2022WaveGAN,
   title     = {WaveGAN: An Frequency-aware GAN for High-Fidelity Few-shot Image Generation},
   author    = {Mengping Yang, and Zhe Wang, and Ziqiu Chi, and Wenyi Feng},
   booktitle = {ECCV},
   year      = {2022}
 }
+```
