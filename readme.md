@@ -125,7 +125,7 @@ If you use our WaveGAN-B version to train the model, remember to comment bellow 
 ```
 
 Feel free to contact kobeshegu@gmail.com if you have any question!
-Our code is heavily based on LoFGAN, we thanks their great work!
+Our code is heavily based on [LoFGAN](https://github.com/edward3862/LoFGAN-pytorch), where you can download the datasets we used in this paper. We thanks a lot for their great work!
 
 
 ## Citation:
