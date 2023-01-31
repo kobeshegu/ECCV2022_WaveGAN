@@ -122,10 +122,12 @@ Our code is heavily based on [LoFGAN](https://github.com/edward3862/LoFGAN-pytor
 
 ## Citation:
 ```
-@inproceedings{Yang2022WaveGAN,
-  title     = {WaveGAN: An Frequency-aware GAN for High-Fidelity Few-shot Image Generation},
-  author    = {Mengping Yang, and Zhe Wang, and Ziqiu Chi, and Wenyi Feng},
-  booktitle = {ECCV},
-  year      = {2022}
+@inproceedings{yang2022wavegan,
+  title={WaveGAN: Frequency-Aware GAN for High-Fidelity Few-Shot Image Generation},
+  author={Yang, Mengping and Wang, Zhe and Chi, Ziqiu and Feng, Wenyi},
+  booktitle={European Conference on Computer Vision},
+  pages={1--17},
+  year={2022},
+  organization={Springer}
 }
 ```
