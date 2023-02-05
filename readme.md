@@ -116,6 +116,9 @@ If you use our WaveGAN-B version to train the model, remember to comment bellow 
         LH4, HL4, HH4 = LH4[:, base_index, :, :, :], HL4[:, base_index, :, :, :], HH4[:, base_index, :, :, :]
 ```
 
+## Checkpoints:
+[[Baidu Netdisk (code:wave)](https://pan.baidu.com/s/1NySVlZSO0CN8ulbFkuFK-A)]
+
 Feel free to contact kobeshegu@gmail.com if you have any question!
 Our code is heavily based on [LoFGAN](https://github.com/edward3862/LoFGAN-pytorch), where you can download the datasets we used in this paper. We thanks a lot for their great work!
 
